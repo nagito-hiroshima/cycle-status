@@ -11,18 +11,18 @@
     <!--ロード-->
     <div class="loading">
         <div class="title">
-            <img src="/logo.png" alt="ロゴ" width="200px">
+            <img src="../logo.png" alt="ロゴ" width="200px">
             <h1>Myチャリ状況</h1>
         </div>
         <div class="loading__icon"></div>
         <div style="position: relative; top:30vh;">
         企画・ツール設計/開発
-        <img src="/3.png" alt="アイコン" width="300px">
+        <img src="../3.png" alt="アイコン" width="300px">
     </div>
     </div>
 
     <div class="title">
-        <img src="/logo.png" alt="ロゴ" width="200px">
+        <img src="../logo.png" alt="ロゴ" width="200px">
         <h1>Myチャリ状況</h1>
         現在の作業状況をご確認いただけます
     </div>
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="icom">
-                <img src="/logo.png" alt="アイコン">
+                <img src="../logo.png" alt="アイコン">
             </div>
         </div>
 
@@ -73,12 +73,12 @@
     </div>
 
     <div class="tel">
-        <img src="/icom1.png" alt="電話アイコン" width="30px">
+        <img src="../icom1.png" alt="電話アイコン" width="30px">
         <a href="tel:090-3521-8304">自転車点検会専用ダイヤル <br>（作業エリア直通）</a>
     </div>
     <div class="icoms">
         <div style="font-size: 15px; font-weight: bold;">設計/開発</div>
-        <img src="/3.png" alt="Twitter" width="auto" height="50">
+        <img src="../3.png" alt="Twitter" width="auto" height="50">
     </div>
 
     </div>
@@ -491,7 +491,7 @@
                 //tooltip-text
                 document.querySelector('.tooltip-text').innerHTML = "受付が完了しました。";
                 //img src
-                document.querySelector('.icom img').src = "/icom8.png";
+                document.querySelector('.icom img').src = "../icom8.png";
                 //order
                 document.getElementById("order").textContent = step;
             } else if (status == "点検・修理中") {
@@ -508,7 +508,7 @@
                 //tooltip-text
                 document.querySelector('.tooltip-text').innerHTML = "詳しい進捗状況を知りたい場合は、<br>お問い合わせください。";
                 //img src
-                document.querySelector('.icom img').src = "/icom7.png";
+                document.querySelector('.icom img').src = "../icom7.png";
                 //order
                 document.getElementById("order").textContent = step;
             } else if (status == "保管中（無料点検完了）") {
@@ -527,7 +527,7 @@
                 //tooltip-text
                 document.querySelector('.tooltip-text').innerHTML = "無料点検が完了しました。";
                 //img src
-                document.querySelector('.icom img').src = "/icom6.png";
+                document.querySelector('.icom img').src = "../icom6.png";
                 //order
                 document.getElementById("order").textContent = step;
             } else if (status == "保管中（有償修理完了）") {
@@ -546,7 +546,7 @@
                 //tooltip-text
                 document.querySelector('.tooltip-text').innerHTML = "有料修理が完了しました。";
                 //img src
-                document.querySelector('.icom img').src = "/icom5.png";
+                document.querySelector('.icom img').src = "../icom5.png";
                 //order
                 document.getElementById("order").textContent = step;
             } else if (status == "お渡し済み") {
@@ -566,7 +566,7 @@
                 //tooltip-text
                 document.querySelector('.tooltip-text').innerHTML = "既にお渡し済みです。";
                 //img src
-                document.querySelector('.icom img').src = "/icom4.png";
+                document.querySelector('.icom img').src = "../icom4.png";
                 //order
                 document.getElementById("order").textContent = step;
             } else if (status == "空き") {
@@ -580,7 +580,7 @@
                 //tooltip-text
                 document.querySelector('.tooltip-text').innerHTML = "未登録です。";
                 //img src
-                document.querySelector('.icom img').src = "/icom3.png";
+                document.querySelector('.icom img').src = "../icom3.png";
             } else {
                 doc[0].classList.remove("active");
                 doc[1].classList.remove("active");
@@ -592,7 +592,7 @@
                 //tooltip-text
                 document.querySelector('.tooltip-text').innerHTML = "お問い合わせください。";
                 //img src
-                document.querySelector('.icom img').src = "/icom2.png";
+                document.querySelector('.icom img').src = "../icom2.png";
             }
             //ローディング非表示fadeOut();
 
