@@ -16,9 +16,10 @@
         </div>
         <div class="loading__icon"></div>
         <div style="position: relative; top:30vh;">
-        企画・ツール設計/開発
-        <img src="/3.png" alt="アイコン" width="300px">
-    </div>
+            企画・ツール設計/開発
+            <img src="/3.png" alt="アイコン" width="300px"
+                onclick="location.href='https://www.instagram.com/oecu.coop.gi/'">
+        </div>
     </div>
 
     <div class="title">
@@ -72,13 +73,14 @@
         </div>
     </div>
 
-    <div class="tel">
+    <div class="tel" 　onclick="location.href='tel:090-3521-8304'">
         <img src="/icom1.png" alt="電話アイコン" width="30px">
         <a href="tel:090-3521-8304">自転車点検会専用ダイヤル <br>（作業エリア直通）</a>
     </div>
     <div class="icoms">
         <div style="font-size: 15px; font-weight: bold;">設計/開発</div>
-        <img src="/3.png" alt="Twitter" width="auto" height="50">
+        <img src="/3.png" alt="Twitter" width="auto" height="50"
+            onclick="location.href='https://www.instagram.com/oecu.coop.gi/'">
     </div>
 
     </div>
@@ -460,7 +462,7 @@
                 })
                 .then(data => {
                     // Displaying data in the HTML
-                    console.log(data);
+                    //console.log(data);
                     view(data, id);
                 })
                 .catch(error => {
@@ -598,6 +600,10 @@
 
             const loading = document.querySelector('.loading');
             loading.style.animation = 'fadeout 1s forwards';
+            //z-indexを変更
+            window.setTimeout(function () {
+                loading.style.zIndex = '-1';
+            }, 1000);
 
         }
 
@@ -626,5 +632,15 @@
 
     </script>
 </body>
+<script>
+  console.log("version 1.0.0");
+  //赤文字大きくconsole.log
+    console.log("%c現在、生協学生委員会では委員を募集しています。", "color:red; font-size: 20px;");
+    console.log("%c詳しくは、生協学生委員会のInstagramをご覧ください。", "color:blue; font-size: 15px;");
+    console.log("%chttps://www.instagram.com/oecu.coop.gi/", "color:blue; font-size: 15px;");
+    //img
+    console.log("%c", "padding:50px 50px; background:url(/3.png) no-repeat; background-size: 100px 100px;");
+
+</script>
 
 </html>
