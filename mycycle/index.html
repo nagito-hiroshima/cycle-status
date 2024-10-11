@@ -99,7 +99,7 @@
     </div>
     <div class="icoms">
         <div style="font-size: 15px; font-weight: bold;">設計/開発</div>
-        <img src="../3.png" alt="Twitter" width="auto" height="50"
+        <img src="../3.png" alt="Twitter" width="auto" height="30"
             onclick="location.href='https://www.instagram.com/oecu.coop.gi/'">
     </div>
 
@@ -110,11 +110,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            height: 90vh;
             margin: 0;
-            padding: 0;
             font-family: 'Noto Sans JP', sans-serif;
-
+            flex-direction: column;
         }
 
         /* ローディング */
@@ -189,7 +188,7 @@
 
         .icoms {
             text-align: center;
-            font-size: 8px;
+            font-size: 1px;
             /*画面下に揃える*/
             position: fixed;
             bottom: 10px;
@@ -467,7 +466,8 @@
             document.getElementById("id").textContent = "#" + myParam;
             main(myParam);
         } else {
-            main("000");
+            console.error("IDが指定されていません");
+            window.location.href = "../";
         }
 
         function main(id) {
@@ -655,9 +655,7 @@
     </script>
 </body>
 <script>
-    console.log("version 1.0.0");
-
-    //水色の背景に白文字で文字列を表示
+    console.log("version 1.5.0");
     console.log(
         "\n\n\n%c     大  阪  電  気  通  信  大  学     %c\n生%c協%c学%c生%c委員会\n%c  https://www.instagram.com/oecu.coop.gi\n\n\n",
         "color:white; background: #00A7E1; font-size: 10px; padding: 5px; text-align: center;",
